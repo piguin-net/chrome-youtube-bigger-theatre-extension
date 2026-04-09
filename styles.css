@@ -7,7 +7,12 @@ ytd-page-manager#page-manager.ytd-app:has(ytd-watch-flexy[role="main"]) {
 }
 
 ytd-masthead[frosted-glass-mode="none"] {
-    opacity: 0.2;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    opacity: 0.1;
 }
 
 ytd-masthead[frosted-glass-mode="none"]:hover  {
