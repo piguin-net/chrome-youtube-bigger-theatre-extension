@@ -1,7 +1,19 @@
-ytd-page-manager > ytd-watch-flexy[full-bleed-player]:not(ytd-watch-flexy[fullscreen]) > #full-bleed-container.ytd-watch-flexy {
-    max-height: calc(100vh - 56px);
+ytd-page-manager > ytd-watch-flexy[full-bleed-player] > #full-bleed-container.ytd-watch-flexy {
+    max-height: 100vh;
 }
 
-ytd-page-manager > ytd-watch-flexy[full-bleed-player]:is(ytd-watch-flexy[fullscreen]) > #full-bleed-container.ytd-watch-flexy {
-    max-height: none;
+ytd-page-manager#page-manager.ytd-app:has(ytd-watch-flexy[role="main"]) {
+    margin-top: 0;
+}
+
+ytd-masthead[frosted-glass-mode="none"] {
+    opacity: 0.2;
+}
+
+ytd-masthead[frosted-glass-mode="none"]:hover  {
+    opacity: 1.0;
+}
+
+ytd-masthead[frosted-glass-mode="with-chipbar"] {
+    opacity: 1.0;
 }
