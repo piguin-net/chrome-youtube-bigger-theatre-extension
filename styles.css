@@ -1,3 +1,7 @@
-ytd-page-manager > ytd-watch-flexy[full-bleed-player] > #full-bleed-container.ytd-watch-flexy {
+ytd-page-manager > ytd-watch-flexy[full-bleed-player]:not(ytd-watch-flexy[fullscreen]) > #full-bleed-container.ytd-watch-flexy {
     max-height: calc(100vh - 56px);
+}
+
+ytd-page-manager > ytd-watch-flexy[full-bleed-player]:is(ytd-watch-flexy[fullscreen]) > #full-bleed-container.ytd-watch-flexy {
+    max-height: none;
 }
